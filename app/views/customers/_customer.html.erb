@@ -1,7 +1,7 @@
 <div>
-	<h1><% @customer.full_name %></h1>
-	<% image_tag(@customer.image) %>
-	<p><strong>Phone: <% @customer.phone_number %></strong></p>
-	<p><strong>Email: <% @customer.email %></strong></p>
-	<p><strong>Notes: <% @customer.notes %></strong></p>
+	<h1><%= @customer.full_name %></h1>
+	<%= image_tag @customer.image %>
+	<p><strong>Phone: <%= @customer.phone_number %></strong></p>
+	<p><strong>Email: <%= @customer.email %></strong></p>
+	<p><strong>Notes: <%= @customer.notes %></strong></p>
 </div>
