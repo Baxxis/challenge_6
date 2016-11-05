@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>All Customers</h1>
+<div>
+  <%= link_to 'New Customer', new_customer_path %> -
+  <%= link_to 'Alphabetized', alphabetized_path %> - 
+  <%= link_to 'Missing Email', missing_email_path %>
+</div>
+
+    <% @customers.each do |customer| %>
+      <%= render 'customer', customer: customer %>
+
+      <!-- <tr>
+        <td><%= customer.full_name %></td>
+        <td><%= customer.phone_number %></td>
+        <td><%= customer.email %></td>
+        <td><%= customer.image %></td>
+        <td><%= customer.notes %></td>
+        <td><%= link_to 'Show', customer %></td>
+        <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
+        <td><%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr> -->
+    <% end %>
+
+<br>

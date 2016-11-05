@@ -1,0 +1,11 @@
+<div class="customer_panel">
+	<div style="float: right">
+		<%= link_to 'edit', edit_customer_path(customer) %>
+		<%= link_to 'x', destroy_customer_path(customer) %>
+	</div>
+	<h1><%= customer.full_name %></h1>
+	<%= image_tag customer.image %>
+	<p><strong>Phone: </strong><%= customer.phone_number %></p>
+	<p><strong>Email: </strong><%= customer.email %></p>
+	<p><strong>Notes: </strong><%= customer.notes %></p>
+</div>
