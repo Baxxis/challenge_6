@@ -8,4 +8,5 @@
 	<p><strong>Phone: </strong><%= customer.phone_number %></p>
 	<p><strong>Email: </strong><%= customer.email %></p>
 	<p><strong>Notes: </strong><%= customer.notes %></p>
+	<p><strong>Province: </strong><%= customer.province_id.nil? ? 'None' : customer.province.name %></p>
 </div>

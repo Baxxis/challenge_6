@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :provinces
   resources :customers
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get '/', to: 'finder#index', as: 'index'
